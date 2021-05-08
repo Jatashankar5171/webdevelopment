@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="canvas.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="game-screen">
+      <div class="updates">
+        <label for="" id="updates">Play with bot</label>
+      </div>
+      <div class="opponent">
+        <div class="cards-collection">
+          <div class="card"  id="11" onclick="enemyCard(id)">
+            <div class="image">
+              <img src="assets2/0Fool.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image11">HP:</label>
+              <label for="image11" id="11hp">30</label>
+              <label for="image11">|Dpa:</label>
+              <label for="image11" id="11dpa">4</label>
+            </div>
+          </div>
+          <div class="card"  id="22" onclick="enemyCard(id)">
+            <div class="image">
+              <img src="assets2/1Magician.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image22">HP:</label>
+              <label for="image22" id="22hp">25</label>
+              <label for="image22">|Dpa:</label>
+              <label for="image22" id="22dpa">5</label>
+            </div>
+          </div>
+          <div class="card"  id="33" onclick="enemyCard(id)">
+            <div class="image">
+              <img src="assets2/2Priestess.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image33">HP:</label>
+              <label for="image33" id="33hp">20</label>
+              <label for="image33">|Dpa:</label>
+              <label for="image33" id="33dpa">7</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="battle-field">
+      </div>
+      <div class="player">
+        <div class="cards-collection">
+          <div class="card"  id="1" onclick="playerCard(id)">
+            <div class="image">
+              <img src="assets2/0Fool.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image1">HP:</label>
+              <label for="image1" id="1hp">30</label>
+              <label for="image1">|Dpa:</label>
+              <label for="image1" id="1dpa">4</label>
+            </div>
+          </div>
+          <div class="card"  id="2" onclick="playerCard(id)">
+            <div class="image">
+              <img src="assets2/1Magician.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image2">HP:</label>
+              <label for="image2" id="2hp">25</label>
+              <label for="image2">|Dpa:</label>
+              <label for="image2" id="2dpa">5</label>
+            </div>
+          </div>
+          <div class="card"  id="3" onclick="playerCard(id)">
+            <div class="image">
+              <img src="assets2/2Priestess.png" alt="image1">
+            </div>
+            <hr class="child">
+            <div class="info">
+              <label for="image3">HP:</label>
+              <label for="image3" id="3hp">20</label>
+              <label for="image3">|Dpa:</label>
+              <label for="image3" id="3dpa">7</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" name="play-button" id="play-btn">Play</button>
+        <button type="button" name="attack-button" id="attack-btn" onclick="attack()">Attack</button>
+        <button type="button" name="surrender-button" id="surrender-btn">Surrender</button>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <script src="card.js" charset="utf-8"></script>
+  </footer>
+</html>
